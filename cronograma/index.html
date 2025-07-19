@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cronograma ENEM</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <button id="menuButton" onclick="openMenu()">☰</button>
+    <h1>📅 Cronograma ENEM</h1>
+    <select id="semanaSelect" onchange="mostrarSemana()">
+      <option value="semana1">13 de jul a 19 de jul</option>
+      <option value="semana2">20 de jul a 26 de jul</option>
+      <option value="semana3">27 de jul a 02 de ago</option>
+      <option value="semana4">03 de ago a 09 de ago</option>
+      <option value="semana5">10 de ago a 16 de ago</option>
+      <option value="semana6">17 de ago a 23 de ago</option>
+      <option value="semana7">24 de ago a 30 de ago</option>
+      <option value="semana8">31 de ago a 06 de set</option>
+      <option value="semana9">07 de set a 13 de set</option>
+      <option value="semana10">14 de set a 20 de set</option>
+      <option value="semana11">21 de set a 27 de set</option>
+      <option value="semana12">28 de set a 04 de out</option>
+      <option value="semana13">05 de out a 11 de out</option>
+      <option value="semana14">12 de out a 18 de out</option>
+      <option value="semana15">19 de out a 25 de out</option>
+      <option value="semana16">26 de out a 01 de nov</option>
+    </select>
+  </header>
+
+  <h5 id="semanaTitulo">semana1</h5>
+
+  <main id="tabelaContainer">
+    <!-- A tabela  carregada com JavaScript -->
+  </main>
+
+  <!-- Menu lateral -->
+  <div id="sideMenu">
+    <button id="closeBtn" onclick="closeMenu()">×</button>
+    <a href="https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos" target="_blank"> Provas antigas</a>
+    <a href="https://www.youtube.com/@descomplica" target="_blank"> Aulas no YouTube</a>
+    <a href="https://www.youtube.com/@descomplica" target="_blank">Redação</a>
+    <a href="#">📅 Cronograma (você está aqui)</a>
+  </div>
+
+  <script>
+    function openMenu() {
+      document.getElementById("sideMenu").style.width = "250px";
+    }
+
+    function closeMenu() {
+      document.getElementById("sideMenu").style.width = "0";
+    }
+  </script>
+
+  <script src="dados.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

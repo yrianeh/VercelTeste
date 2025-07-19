@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 1rem;
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+header {
+  position: relative;
+  background-color: #1f1f1f;
+  text-align: center;
+  padding: 2rem 1rem 1.5rem;
+  margin: -1rem -1rem 2rem;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#semanaSelect,
+select {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+#semanaSelect {
+  margin: 0 auto;
+  display: block;
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  border: 1px solid #444;
+  border-radius: 4px;
+}
+
+#menuButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+#semanaTitulo {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+#tabelaContainer {
+  overflow-x: auto;
+  width: 100%;
+}
+
+/* Tabelas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  background-color: #1e1e1e;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid #333;
+  color: #f0f0f0;
+}
+
+th {
+  background-color: #2a2a2a;
+}
+
+td {
+  background-color: #1c1c1c;
+}
+
+/* Menu lateral */
+#sideMenu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #1f1f1f;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+  z-index: 999;
+}
+
+#sideMenu a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #f0f0f0;
+  display: block;
+}
+
+#sideMenu a:hover {
+  background-color: #333;
+}
+
+#closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 2rem;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  h1,
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  #semanaSelect,
+  select {
+    font-size: 0.9rem;
+  }
+
+  th, td {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+}
